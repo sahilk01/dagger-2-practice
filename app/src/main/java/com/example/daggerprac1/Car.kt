@@ -10,4 +10,8 @@ class Car @Inject constructor(private val engine: Engine, private val wheels: Wh
         engine.drive()
         wheels.drive()
     }
+    @Inject
+    fun setListener(remote: Remote){
+        remote.setListener(this)
+    }
 }

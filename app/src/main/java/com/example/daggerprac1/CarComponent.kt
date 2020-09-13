@@ -8,4 +8,6 @@ interface CarComponent {
     fun getWheels(): Wheels
 
     fun getCar(): Car
+
+    fun mainInject(mainActivity: MainActivity)
 }

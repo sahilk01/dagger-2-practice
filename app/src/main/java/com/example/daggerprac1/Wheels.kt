@@ -3,9 +3,9 @@ package com.example.daggerprac1
 import android.util.Log
 import javax.inject.Inject
 
-class Wheels @Inject constructor(private val nutBolts: NutBolts) {
+class Wheels(private val rims: Rims, private val tires: Tires) {
     fun drive(){
         Log.d("Car", "wheels init hogye")
-        nutBolts.add()
+        tires.inflate()
     }
 }
